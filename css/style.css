@@ -15,24 +15,243 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
 :root{
   
 }
 
 /*BODY*/
 	body{
-
+		background-color: #00002e;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
 	}
 
 /*TOPO*/
-	header.topo{
-		
+	figure  figcaption{
+	display: none;
+	}	
+	.pg-home header{
+		display: flex;
+		justify-content: center;
+	}
+	.pg-home header h2{
+		font-size: 30px;
+		color: white;
+		padding-bottom: 30px;
 	}
 
 /*RODAPÉ*/
-	
-
-/*PÁGINA INICIAL*/
-	div.pg-home{
+	@media screen and (max-width:575px){
+		body{
+			width: 95vw;
+		}
+		.topo{
+			text-align: center;
+		}
+		.topo img{
+			width: 50%;
+		}
+		.pg-home header h2{
+			padding-top: 10px;
+			font-size: 20px
+		}
+		.pg-home ul{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			justify-content: center;
+			color: grey;
+			width: 80%;
+		}
+		.pg-home ul li{
+			padding-bottom: 40px;
+			padding-right: 20px;
+			width: 40%;
+			text-align: center;
+		}
+		.pg-home ul li img{
+			width: 100%;
+		}
+		.pg-home ul li img:hover:not(.notAdd){
+			border: 1px solid white;
+		}
+		.pg-home ul li:hover{
+			color: white;
+		}
+		footer{
+			display: flex;
+			margin-top: 40px;
+			justify-content: center;
+			
+			text-transform: uppercase;
+		}
+		footer button{
+			font-size: 20px;
+			border: 1px solid rgb(112, 112, 112);
+			width: 170px;
+			height: 70px;
+			background-color: #00002e;
+			color: grey;
+		}
+		footer button:hover{
+			cursor: pointer;
+			color: white;
+		}
 		
+	}
+	@media screen and (min-width:576px) and (max-width:767px){
+		.topo{
+			text-align: center;
+		}
+		.pg-home ul{
+			flex-wrap: wrap;
+			display: flex;
+			margin: 0 auto;
+			justify-content: center;
+			width: 80%;
+			color: grey;
+			text-align: center;
+		}
+		.pg-home ul li{
+			padding-bottom: 40px;
+			padding-right: 20px;
+			width: 40%;
+		}
+		.pg-home ul li img{
+			width: 80%;
+		}
+		.pg-home ul li figure img:hover:not(.notAdd){
+			border: 1px solid white;
+		}
+		.pg-home ul li:hover{
+			color: white
+		}
+		footer{
+			display: flex;
+			margin-top: 40px;
+			justify-content: center;
+			
+			text-transform: uppercase;
+		}
+		footer button{
+			font-size: 20px;
+			border: 1px solid rgb(112, 112, 112);
+			width: 170px;
+			height: 70px;
+			background-color: #00002e;
+			color: grey;
+		}
+		footer button:hover{
+			cursor: pointer;
+			color: white;
+		}
+		
+	}
+	@media screen and (min-width:768px) and (max-width:1023px){
+		.topo{
+			text-align: center;
+		}
+		.pg-home section{
+			width: 868px;
+			margin: 0 auto;
+		}
+		.pg-home{
+			display: flex;
+			
+		}
+		.pg-home ul {
+			display: flex;
+			color: grey;
+			text-align: center;
+			justify-content: space-between;
+		}
+		.pg-home ul li img{
+			max-width: 186px;
+			max-height: 186px;
+			
+			width: 100%;
+			height: 100%;
+		}
+		.pg-home ul li figure img:hover:not(.notAdd){
+			border: 1px solid white;
+		}
+		.pg-home ul li:hover{
+			color: white
+		}
+		footer{
+			display: flex;
+			margin-top: 40px;
+			justify-content: center;
+			
+			text-transform: uppercase;
+		}
+		footer button{
+			font-size: 20px;
+			border: 1px solid rgb(112, 112, 112);
+			width: 170px;
+			height: 70px;
+			background-color: #00002e;
+			color: grey;
+		}
+		footer button:hover{
+			cursor: pointer;
+			color: white;
+		}
+	}
+	@media screen and (min-width:1024px){
+		
+		.pg-home{
+			margin-top: 100px ;
+		}
+	
+		.pg-home ul{
+			display: flex;
+			margin: 0 auto;
+			width: 858px;
+			
+			justify-content: space-between;
+			text-align: center;
+			font-weight: bold;
+			color: grey;
+		}
+		
+		.pg-home ul li figure img:hover:not(.notAdd){
+			border: 1px solid white;
+		}
+		.pg-home ul li:hover{
+			color: white
+		}
+		.pg-home ul li img{
+			cursor: pointer;
+			width: 186px;
+			
+		}
+		
+		.pg-home ul li h3{
+			font-weight: 500;
+		}
+		footer{
+			display: flex;
+			margin-top: 40px;
+			justify-content: center;
+			
+			text-transform: uppercase;
+		}
+		footer button{
+			font-size: 20px;
+			border: 1px solid rgb(112, 112, 112);
+			width: 170px;
+			height: 70px;
+			background-color: #00002e;
+			color: grey;
+		}
+		footer button:hover{
+			cursor: pointer;
+			color: white;
+		}
 	}
