@@ -48,7 +48,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /*RODAPÉ*/
 	@media screen and (max-width:575px){
 		body{
-			width: 95vw;
+			width: 100vw;
 		}
 		.topo{
 			text-align: center;
@@ -60,22 +60,26 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			padding-top: 10px;
 			font-size: 20px
 		}
+		.pg-home{
+			width: 100%;
+		}
 		.pg-home ul{
 			display: flex;
 			flex-wrap: wrap;
 			margin: 0 auto;
 			justify-content: center;
 			color: grey;
-			width: 80%;
+			width: 100vw;
 		}
 		.pg-home ul li{
 			padding-bottom: 40px;
-			padding-right: 20px;
+			padding: 10px;	
 			width: 40%;
 			text-align: center;
 		}
 		.pg-home ul li img{
-			width: 100%;
+			width: 90%;
+			
 		}
 		.pg-home ul li img:hover:not(.notAdd){
 			border: 1px solid white;
@@ -104,7 +108,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		}
 		
 	}
-	@media screen and (min-width:576px) and (max-width:767px){
+	@media screen and (min-width:576px) {
 		.topo{
 			text-align: center;
 		}
@@ -118,7 +122,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			text-align: center;
 		}
 		.pg-home ul li{
-			padding-bottom: 40px;
+			padding-bottom: 5%;
 			padding-right: 20px;
 			width: 40%;
 		}
@@ -129,7 +133,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			border: 1px solid white;
 		}
 		.pg-home ul li:hover{
-			color: white
+			color: white;
 		}
 		footer{
 			display: flex;
@@ -152,7 +156,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		}
 		
 	}
-	@media screen and (min-width:768px) and (max-width:1023px){
+	@media screen and (min-width:768px) {
 		.topo{
 			text-align: center;
 		}
@@ -213,13 +217,20 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			display: flex;
 			margin: 0 auto;
 			width: 858px;
-			
-			justify-content: space-between;
+			flex-wrap: nowrap;
 			text-align: center;
 			font-weight: bold;
 			color: grey;
 		}
+		.pg-home ul li figure{
+			width: 186px;
+			
+		}
+		.pg-home ul li{
+			width: 186px;
 		
+			
+		}
 		.pg-home ul li figure img:hover:not(.notAdd){
 			border: 1px solid white;
 		}
@@ -229,6 +240,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		.pg-home ul li img{
 			cursor: pointer;
 			width: 186px;
+			margin-right: 10px;
+			
 			
 		}
 		
@@ -239,7 +252,6 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			display: flex;
 			margin-top: 40px;
 			justify-content: center;
-			
 			text-transform: uppercase;
 		}
 		footer button{
