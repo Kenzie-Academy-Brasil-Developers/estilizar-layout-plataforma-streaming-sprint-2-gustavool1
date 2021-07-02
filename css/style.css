@@ -123,11 +123,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		}
 		.pg-home ul li{
 			padding-bottom: 5%;
-			padding-right: 20px;
+			padding-right: 10%;
 			width: 40%;
 		}
 		.pg-home ul li img{
-			width: 80%;
+			max-width: 186px;
+    		max-height: 186px;
+			width: 100%;
 		}
 		.pg-home ul li figure img:hover:not(.notAdd){
 			border: 1px solid white;
@@ -172,7 +174,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			display: flex;
 			color: grey;
 			text-align: center;
-			justify-content: space-between;
+			justify-content: space-evenly;
 		}
 		.pg-home ul li img{
 			max-width: 186px;
@@ -247,6 +249,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		
 		.pg-home ul li h3{
 			font-weight: 500;
+			width: 180px;
 		}
 		footer{
 			display: flex;
