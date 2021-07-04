@@ -78,7 +78,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			text-align: center;
 		}
 		.pg-home ul li img{
-			width: 90%;
+			max-width: 138px;
+			width: 100%;
 			
 		}
 		.pg-home ul li img:hover:not(.notAdd){
